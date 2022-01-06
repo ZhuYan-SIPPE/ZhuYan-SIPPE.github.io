@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>关于 | Ruoshui&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ZhuYan-SIPPE.github.io/favicon.ico?v=1641453342856">
+<link rel="stylesheet" href="https://ZhuYan-SIPPE.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
+
+🏠 关于本站
+记录个人的一些学习笔记、读书笔记；
+学习笔记涉及生物信息学、分子生物学、脚本语言等；
+读书笔记记录一些以前或者正在读的书中喜欢的句子、个人读后感；
+👨‍💻 博主是谁
+秋若水
+⛹..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ZhuYan-SIPPE.github.io">
+        <img src="https://ZhuYan-SIPPE.github.io/images/avatar.png?v=1641453342856" class="site-logo">
+        <h1 class="site-title">Ruoshui&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ZhuYan-SIPPE.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2022-01-01</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>记录个人的一些学习笔记、读书笔记；<br>
+学习笔记涉及生物信息学、分子生物学、脚本语言等；<br>
+读书笔记记录一些以前或者正在读的书中喜欢的句子、个人读后感；</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>秋若水</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>历史、考古、科普</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>qsyr-7408@163.com</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ZhuYan-SIPPE.github.io/post/tang-li-shi-shu-ji/">
+                  <h3 class="post-title">
+                    唐历史书籍
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '21adfc5786f6c563cabd',
+        clientSecret: '9ff28555c745552fba54959138ecf44f43cd1192',
+        repo: 'ZhuYan-SIPPE.github.io',
+        owner: 'ZhuYan-SIPPE',
+        admin: ['ZhuYan-SIPPE'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
